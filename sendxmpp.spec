@@ -3,11 +3,11 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-Summary:	sendxmpp
-Summary(pl.UTF-8):	sendxmpp
+Summary:	perl-script to send XMPP (jabber) messages
+Summary(pl.UTF-8):	skrypt perlowy do wysyłania wiaomości XMPP (jabber)
 Name:		sendxmpp
 Version:	0.0.8
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://sendxmpp.platon.sk/%{name}-%{version}.tar.gz
@@ -22,10 +22,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-sendxmpp
+sendxmpp is a perl-script to send XMPP (jabber) messages, similar to
+what mail(1) does for mail.
 
 %description -l pl.UTF-8
-sendxmpp
+sendxmpp jest perlowym skryptem służącym do wysyłania wiadomości XMPP
+(jabber), podobnie jak komenda mail(1) wysyła wiadomości pocztowe.
 
 %prep
 %setup -q
@@ -35,10 +37,6 @@ sendxmpp
 	INSTALLDIRS=vendor
 
 %{__make}
-# if module isn't noarch, use:
-# %{__make} \
-#	CC="%{__cc}"
-#	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
