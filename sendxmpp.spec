@@ -6,13 +6,13 @@
 Summary:	perl-script to send XMPP (jabber) messages
 Summary(pl.UTF-8):	skrypt perlowy do wysyłania wiaomości XMPP (jabber)
 Name:		sendxmpp
-Version:	0.0.8
+Version:	1.23
 Release:	1
 License:	GPL v2
 Group:		Development/Languages/Perl
-Source0:	http://sendxmpp.platon.sk/%{name}-%{version}.tar.gz
-# Source0-md5:	8a041f4940274f4d1e72e76fcc95e689
-URL:		http://sendxmpp.platon.sk/
+Source0:	http://sendxmpp.hostname.sk/%{name}-%{version}.tar.gz
+# Source0-md5:	f98b89bc384aff0b304c36957bb6741f
+URL:		http://sendxmpp.hostname.sk/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with autodeps} || %{with tests}
