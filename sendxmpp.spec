@@ -4,7 +4,7 @@
 
 %include	/usr/lib/rpm/macros.perl
 Summary:	perl-script to send XMPP (jabber) messages
-Summary(pl.UTF-8):	skrypt perlowy do wysyłania wiaomości XMPP (jabber)
+Summary(pl.UTF-8):	skrypt perlowy do wysyłania wiadomości XMPP (jabber)
 Name:		sendxmpp
 Version:	1.23
 Release:	1
