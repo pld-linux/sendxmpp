@@ -2,7 +2,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 
-%include	/usr/lib/rpm/macros.perl
 Summary:	perl-script to send XMPP (jabber) messages
 Summary(pl.UTF-8):	skrypt perlowy do wysyłania wiadomości XMPP (jabber)
 Name:		sendxmpp
